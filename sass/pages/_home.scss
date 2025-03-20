@@ -1,7 +1,128 @@
 .content {
-    display: none;
-  }
+  display: none;
+}
 
- #web-dev{
+#web-dev {
   display: block;
- } 
+}
+
+/* General Page Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/* Header */
+header {
+  // background-color: #222;
+  color: rgb(34, 34, 34);
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 38px;
+  margin: 0;
+  font-family: "antique-olive", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  padding-top: 20px;
+}
+
+/* List Styling */
+main {
+  width: 100%;
+  max-width: 1000px;
+  padding: 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+  width: 100%;
+  // display: grid; /* Use CSS Grid */
+  // grid-template-columns: repeat(2, 1fr); /* Create 2 equal columns */
+  // gap: 20px; /* Add spacing between items */
+}
+
+ul li {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  font-size: 18px;
+}
+
+/* Footer */
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+  width: 100%;
+}
+
+/* Car Images */
+li img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* List Items */
+ul li {
+  background: white;
+  margin: 15px 0;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  font-size: 25px;
+  font-family: "antique-olive", sans-serif;
+}
+
+li p {
+  font-size: 28px;
+  font-family: "antique-olive", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  padding-top: 10px;
+}
+
+/* Styling for ALERT messages */
+li.alert {
+  background-color: #ffe6e6; /* Light red background */
+  color: #cc0000; /* Dark red text */
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+/* Styling for WARNING messages */
+li.warning {
+  background-color: #ffddb1; /* Light orange background */
+  color: #cc6600; /* Dark orange text */
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.theft-count {
+  color: #cc0000; /* Red color for emphasis */
+  font-weight: bold; /* Make it bold */
+  font-size: 1.2em; /* Slightly larger font size */
+}
