@@ -1,0 +1,24 @@
+{
+  "name": "chan_wls_huertas_t_hw2",
+  "version": "1.0.0",
+  "description": "This is the homework for OOP, the list of ontario 10 most stolen car.",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html --public-url ./"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Stephaniechan2005/Chan_WLS_Huertas_T_HW2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Stephaniechan2005/Chan_WLS_Huertas_T_HW2/issues"
+  },
+  "homepage": "https://github.com/Stephaniechan2005/Chan_WLS_Huertas_T_HW2#readme",
+  "devDependencies": {
+    "parcel": "^2.14.1"
+  }
+}
