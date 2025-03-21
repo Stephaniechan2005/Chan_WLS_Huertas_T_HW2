@@ -1,0 +1,128 @@
+@font-face {
+  font-family: YourFontName;
+  src: url("https://use.typekit.net/mjm8sww.css");
+}
+
+body {
+  font-family: antique-olive, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.content {
+  display: none;
+}
+
+#web-dev {
+  display: block;
+}
+
+body {
+  color: #333;
+  background-color: #f4f4f4;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+}
+
+header {
+  color: #222;
+  text-align: center;
+  width: 100%;
+  padding: 20px;
+}
+
+h1 {
+  margin: 0;
+  padding-top: 20px;
+  font-family: antique-olive, sans-serif;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+main {
+  width: 100%;
+  max-width: 1000px;
+  padding: 20px;
+}
+
+ul {
+  width: 100%;
+  margin: 20px 0;
+  padding: 0;
+  list-style: none;
+}
+
+ul li {
+  text-align: center;
+  background: #fff;
+  border-radius: 8px;
+  padding: 15px;
+  font-size: 18px;
+  box-shadow: 0 2px 5px #0003;
+}
+
+footer {
+  color: #fff;
+  text-align: center;
+  background-color: #222;
+  width: 100%;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+li img {
+  border-radius: 8px;
+  width: 100%;
+  height: auto;
+}
+
+ul li {
+  text-align: center;
+  background: #fff;
+  border-radius: 8px;
+  margin: 15px 0;
+  padding: 15px;
+  font-family: antique-olive, sans-serif;
+  font-size: 25px;
+  box-shadow: 0 2px 5px #0003;
+}
+
+li p {
+  padding-top: 10px;
+  font-family: antique-olive, sans-serif;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+li.alert {
+  color: #c00;
+  text-align: center;
+  background-color: #ffe6e6;
+  border-radius: 8px;
+  padding: 10px;
+  font-weight: bold;
+}
+
+li.warning {
+  color: #c60;
+  text-align: center;
+  background-color: #ffddb1;
+  border-radius: 8px;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.theft-count {
+  color: #c00;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+/*# sourceMappingURL=Chan_WLS_Huertas_T_HW2.47ca9330.css.map */
