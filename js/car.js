@@ -12,37 +12,42 @@ class Car {
     let ul = document.querySelector("#stolenCarList");
     let li = document.createElement("li");
 
-    // Create a container div for the car details
     const carContainer = document.createElement("div");
-    carContainer.classList.add("car-container"); // Add a class for styling
+    carContainer.classList.add("car-container");
 
-    // Create image element
     const carImage = document.createElement("img");
     carImage.src = this.image;
     carImage.alt = `${this.brand} ${this.model}`;
 
-    // Create text content
     const carText = document.createElement("p");
 
-    // Wrap the theft count in a span for styling
     const theftCount = document.createElement("span");
-    theftCount.classList.add("theft-count"); // Add a class for styling
+    theftCount.classList.add("theft-count");
     theftCount.textContent = `${this.thefts}`;
 
-    // Add the text with the theft count
     carText.innerHTML = `The ${this.year} ${this.brand} ${this.model} (${this.type}) has been stolen `;
     carText.appendChild(theftCount);
     carText.innerHTML += ` times.`;
 
-    // Append elements to the container div
     carContainer.appendChild(carImage);
     carContainer.appendChild(carText);
 
-    // Append the container div to the <li>
     li.appendChild(carContainer);
-
-    // Append the <li> to the <ul>
     ul.appendChild(li);
+
+    // Animate the newly added car details using GSAP with ScrollTrigger
+    gsap.from(li, {
+      duration: 1,
+      opacity: 0,
+      y: 50,
+      ease: "power2.out",
+      scrollTrigger: {
+        trigger: li,
+        start: "top 50%",
+        end: "top 60%",
+        toggleActions: "play none none none",
+      },
+    });
   }
 }
 
@@ -55,13 +60,23 @@ class SUV extends Car {
     let ul = document.querySelector("#stolenCarList");
     let li = document.createElement("li");
 
-    // Add a class for styling
     li.classList.add("alert");
 
     li.textContent = `ALERT: The ${this.year} ${this.brand} ${this.model} is a high-risk stolen SUV!`;
-
-    // Append the alert message after the car details
     ul.appendChild(li);
+
+    gsap.from(li, {
+      duration: 1,
+      opacity: 0,
+      y: 50,
+      ease: "power2.out",
+      scrollTrigger: {
+        trigger: li,
+        start: "top 80%",
+        end: "top 60%",
+        toggleActions: "play none none none",
+      },
+    });
   }
 }
 
@@ -72,15 +87,33 @@ class Truck extends Car {
 
   truckRiskAlert() {
     let ul = document.querySelector("#stolenCarList");
+
+    if (!ul) {
+      console.error(
+        "The element with ID 'stolenCarList' was not found in the DOM."
+      );
+      return;
+    }
+
     let li = document.createElement("li");
 
-    // Add a class for styling
     li.classList.add("warning");
-
     li.textContent = `WARNING: Stolen ${this.year} ${this.brand} ${this.model} trucks are high-risk stolen.`;
 
-    // Append the warning message after the car details
     ul.appendChild(li);
+
+    gsap.from(li, {
+      duration: 1,
+      opacity: 0,
+      y: 50,
+      ease: "power2.out",
+      scrollTrigger: {
+        trigger: li,
+        start: "top 90%",
+        end: "top 75%",
+        toggleActions: "play none none none",
+      },
+    });
   }
 }
 
