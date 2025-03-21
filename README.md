@@ -1,6 +1,6 @@
 # Chan_W_Huertas_T_HW1
 
-This is the homework for OOP, the list of ontario 10 most stolen car
+This is the homework for OOP, the list of ontario 10 most stolen car.
 
 ## Installation
 
